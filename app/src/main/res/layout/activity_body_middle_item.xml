@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/ac_body_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x8"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/text_shaper_red"
+                android:paddingLeft="@dimen/x8"
+                android:paddingRight="@dimen/x8"
+                android:text="头部"
+                android:textColor="#d93a3a" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="4dp"
+                android:background="#66595c5c" />
+
+            <com.example.ls.shoppingmall.utils.layoututils.MyFlowLayout
+                android:id="@+id/select_adapter_xcflow_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x8"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/text_shaper_yellow"
+                android:paddingLeft="@dimen/x8"
+                android:paddingRight="@dimen/x8"
+                android:text="身体"
+                android:textColor="#e8ffb102" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="4dp"
+                android:background="#66595c5c" />
+
+            <com.example.ls.shoppingmall.utils.layoututils.MyFlowLayout
+                android:id="@+id/select_adapter_xcflow_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x8"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@drawable/text_shaper_green"
+                android:paddingLeft="@dimen/x8"
+                android:paddingRight="@dimen/x8"
+                android:text="下体"
+                android:textColor="#9dec30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="4dp"
+                android:background="#66595c5c" />
+
+            <com.example.ls.shoppingmall.utils.layoututils.MyFlowLayout
+                android:id="@+id/select_adapter_xcflow_footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:drawableLeft="@mipmap/delete"
+                        android:text="历史" />
+
+                    <TextView
+                        android:id="@+id/search_db_delect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="40dp"
+                        android:background="@mipmap/delete" />
+                </RelativeLayout>
+
+                <com.example.ls.shoppingmall.utils.layoututils.MyFlowLayout
+                    android:id="@+id/select_adapter_xcflow_mowei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/at_bady_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+</LinearLayout>

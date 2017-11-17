@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ls.shoppingmall.home.activity.PerfectInformationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你选择的部位为眼睛"
+            android:textColor="#fa6d6b"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="你选择的部位为眼睛"
+            android:textColor="#848080"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#d9403e" />
+    </LinearLayout>
+    <com.example.ls.shoppingmall.utils.layoututils.MyFlowLayout
+        android:layout_weight="1"
+        android:id="@+id/perfect_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.ls.shoppingmall.utils.layoututils.MyFlowLayout>
+    <TextView
+        android:id="@+id/activity_next_tv"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:text="下一步"
+        android:layout_margin="20dp"
+        android:textSize="18sp"
+        android:background="@drawable/selected_red_shapter_ager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

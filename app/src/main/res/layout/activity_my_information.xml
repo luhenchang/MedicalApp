@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.ls.shoppingmall.user.activity.MyInformationActivity">
+    <include layout="@layout/myinformation_header_include"/>
+    <com.example.ls.shoppingmall.utils.layoututils.OverScrollView
+        android:id="@+id/myscroll_myslf_os"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:background="#f3f3f3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_marginTop="@dimen/x8"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:text="头像"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+                <com.example.ls.shoppingmall.utils.layoututils.CircleImageView
+                    android:id="@+id/ivMineLogo"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/guide_1"
+                    app:border_color="@color/white"
+                    app:border_width="2dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_marginTop="@dimen/x1"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:text="昵称"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:text="阿斯达飞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                   />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_marginTop="@dimen/x8"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:text="姓名"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:text="张某某"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_marginTop="@dimen/x1"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:text="年龄"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:text="11岁"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_marginTop="@dimen/x1"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:text="身高"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:text="170cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_marginTop="@dimen/x1"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:text="体重"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:text="60KG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_marginTop="@dimen/x1"
+                android:background="#ffffff"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:gravity="center_vertical"
+                    android:text="病例史"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:textSize="13sp"
+                    android:gravity="center"
+                    android:text="阿斯达飞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x20"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.example.ls.shoppingmall.utils.layoututils.OverScrollView>
+
+</LinearLayout>

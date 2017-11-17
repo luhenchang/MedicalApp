@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ls.shoppingmall.HelloWorld">
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+        <com.example.ls.shoppingmall.utils.layoututils.ArcProgressbar
+            android:id="@+id/arcProgressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:id="@+id/hellowrod_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="70%"
+            android:textColor="#fb7673" />
+    </RelativeLayout>
+</RelativeLayout>

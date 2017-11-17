@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical"
+    tools:context="com.example.ls.shoppingmall.user.activity.MyRestMoneyActivity">
+
+    <include layout="@layout/myinformation_header_include" />
+
+    <com.example.ls.shoppingmall.utils.layoututils.OverScrollView
+        android:id="@+id/myscroll_myslf_os"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x8"
+        android:scrollbars="none">
+        <!--充值-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x5"
+                    android:text="我的余额"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x32"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/image_tv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:background="@mipmap/delete"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignBottom="@+id/image_tv"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_toRightOf="@+id/image_tv"
+                        android:gravity="center_vertical"
+                        android:text="￥100.00"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x14"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/x20"
+                        android:gravity="center"
+                        android:text="我的余额"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x5"
+                    android:background="#f3f3f3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x32"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:gravity="center_vertical"
+                        android:text="消费记录"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/x12" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/x20"
+                android:background="@drawable/selected_red_shapter_ager"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/x14" />
+        </RelativeLayout>
+
+    </com.example.ls.shoppingmall.utils.layoututils.OverScrollView>
+</LinearLayout>

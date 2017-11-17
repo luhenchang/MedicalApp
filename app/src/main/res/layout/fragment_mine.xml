@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.ls.shoppingmall.utils.layoututils.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ls.shoppingmall.home.activity.BodySelectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f3f3"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:elevation="10dp"
+            app:cardElevation="@dimen/x2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x150">
+
+                <TextView
+                    android:id="@+id/ft_message_tv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:background="@mipmap/delete" />
+
+                <com.example.ls.shoppingmall.utils.layoututils.CircleImageView
+                    android:id="@+id/ft_user_header_iv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/home_man_befor"
+                    app:border_color="@color/white"
+                    app:border_width="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ft_user_header_iv"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="我爱LoVe"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <!--第二个模块-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/x8"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80">
+           <LinearLayout
+               android:id="@+id/ft_restmoney_lint"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_marginLeft="@dimen/x25"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:background="@color/Blue"
+                   android:layout_width="@dimen/x35"
+                   android:layout_height="@dimen/x35" />
+               <TextView
+                   android:textStyle="bold"
+                   android:textSize="16sp"
+                   android:layout_marginTop="@dimen/x6"
+                   android:text="余额"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ft_order_lint"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/Blue"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/x6"
+                    android:text="订单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ft_card_lint"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/Yellow"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/x6"
+                    android:text="优惠卡"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--第3个模块-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/x12"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80">
+            <LinearLayout
+                android:id="@+id/ft_chonzhi_lt"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/Blue"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/x6"
+                    android:text="余额"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/Blue"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/x6"
+                    android:text="订单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/Yellow"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/x6"
+                    android:text="优惠卡"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/x40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/Yellow"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/x6"
+                    android:text="优惠卡"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--第4个模块-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/x12"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/Blue"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x35" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="@dimen/x6"
+                    android:text="余额"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.example.ls.shoppingmall.utils.layoututils.OverScrollView>

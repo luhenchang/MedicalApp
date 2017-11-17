@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ls.shoppingmall.HelloWorld">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/adapter_last_left_rl"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <com.example.ls.shoppingmall.utils.layoututils.CircleProgressBar
+                    android:id="@+id/arcProgressbar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/adapter_last_left_tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/adapter_last_left_rl"
+                android:gravity="center"
+                android:text="病症安捏"
+                android:textColor="#fb7673"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/press_tonext_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/delete" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/first_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#71616164"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
