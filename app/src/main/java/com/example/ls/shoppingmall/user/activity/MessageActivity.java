@@ -18,7 +18,7 @@ import com.example.ls.shoppingmall.user.adapter.ViewPagerFragmentAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MessageActivity extends AppCompatActivity implements UpdateTextResult{
+public class MessageActivity extends AppCompatActivity implements UpdateTextResult {
     private TabLayout mTa;
     private TextView tv_edetor;
     private ViewPager mViewPager;
@@ -28,6 +28,8 @@ public class MessageActivity extends AppCompatActivity implements UpdateTextResu
     private List<BaseFragment> mList;
     private ViewPagerFragmentAdapter adapter;
     EditMyFragmentItem editMyFragmentItem;
+    EditMyFragmentItemAction editMyFragmentItemAction;
+    private int index_pager=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +40,20 @@ public class MessageActivity extends AppCompatActivity implements UpdateTextResu
         initData();
         setData();
     }
-   //这里回调用来更新我编辑和取消按钮的
+
+    //这里回调用来更新我编辑和取消按钮的
     @Override
     public void updateText(String flag, String text) {
         tv_edetor.setText(text);
     }
+
     //接口用来通知碎片我点击编辑了让去执行显示check
     public interface EditMyFragmentItem {
         void EditeItem();
+    }
+
+    public interface EditMyFragmentItemAction {
+        void EditeItemAction();
     }
 
     private void setData() {
@@ -55,8 +63,15 @@ public class MessageActivity extends AppCompatActivity implements UpdateTextResu
         mTa.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-
+                index_pager=tab.getPosition();
                 mViewPager.setCurrentItem(tab.getPosition(), true);
+                if(tv_edetor.getText().equals("取消")) {
+                    tv_edetor.setText("编辑");
+                }else{
+                    tv_edetor.setText("取消");
+                }
+
+
 
             }
 
@@ -79,9 +94,11 @@ public class MessageActivity extends AppCompatActivity implements UpdateTextResu
 
     private void initData() {
         mList = new ArrayList<>();
+        ActionFragment actionFragment = new ActionFragment();
+        editMyFragmentItemAction = actionFragment;
+        actionFragment.setEdeterInterface(MessageActivity.this);
         MessageFragment messageFragment = new MessageFragment();
         messageFragment.setEdeterInterface(MessageActivity.this);
-        ActionFragment actionFragment = new ActionFragment();
         editMyFragmentItem = messageFragment;
         mList.add(messageFragment);
         mList.add(actionFragment);
@@ -90,11 +107,17 @@ public class MessageActivity extends AppCompatActivity implements UpdateTextResu
     private void initView() {
         mTa = (TabLayout) findViewById(R.id.at_message_tb);
         mViewPager = (ViewPager) findViewById(R.id.ac_message_vp);
-        tv_edetor= (TextView) findViewById(R.id.tv_edetor);
+        tv_edetor = (TextView) findViewById(R.id.tv_edetor);
         tv_edetor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editMyFragmentItem.EditeItem();
+                if(index_pager==0) {
+                    editMyFragmentItem.EditeItem();
+                }else {
+                    editMyFragmentItemAction.EditeItemAction();
+
+                }
+
             }
         });
     }
