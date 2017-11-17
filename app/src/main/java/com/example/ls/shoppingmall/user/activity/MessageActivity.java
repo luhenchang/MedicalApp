@@ -13,9 +13,7 @@ import com.example.ls.shoppingmall.base.BaseFragment;
 import com.example.ls.shoppingmall.user.fragment.ActionFragment;
 import com.example.ls.shoppingmall.user.fragment.MessageFragment;
 import com.example.ls.shoppingmall.user.fragment.UpdateTextResult;
-import com.example.ls.shoppingmall.user.fragment.ViewPagerFragmentAdapter;
-import com.example.ls.shoppingmall.utils.MyViewPager;
-import com.example.ls.shoppingmall.utils.layoututils.CustomViewPager;
+import com.example.ls.shoppingmall.user.adapter.ViewPagerFragmentAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

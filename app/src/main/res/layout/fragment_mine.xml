@@ -19,7 +19,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/x150">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@+id/ft_message_tv"
@@ -41,12 +41,13 @@
                     app:border_width="2dp" />
 
                 <TextView
+                    android:layout_marginTop="@dimen/x32"
+                    android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ft_user_header_iv"
-                    android:layout_centerInParent="true"
-                    android:layout_marginTop="@dimen/x10"
                     android:text="我爱LoVe"
+                    android:layout_marginBottom="@dimen/x13"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </RelativeLayout>

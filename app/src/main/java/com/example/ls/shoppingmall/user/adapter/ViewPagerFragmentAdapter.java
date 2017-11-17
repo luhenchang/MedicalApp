@@ -1,4 +1,4 @@
-package com.example.ls.shoppingmall.user.fragment;
+package com.example.ls.shoppingmall.user.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
