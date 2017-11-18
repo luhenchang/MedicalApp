@@ -30,7 +30,7 @@ public class MessageFragment extends BaseFragment implements MessageFragmentAdap
     private static final int MYLIVE_MODE_CHECK = 0;
     private static final int MYLIVE_MODE_EDIT = 1;
     private RecyclerView mRecyclerView;
-    MessageFragmentAdapter adapter;
+    public MessageFragmentAdapter adapter;
     private List<MyLiveList> mList;
     private TwinklingRefreshLayout swipterfreshlayout;
     private Button mBtnDelete;
@@ -38,7 +38,7 @@ public class MessageFragment extends BaseFragment implements MessageFragmentAdap
     private TextView mTvSelectNum;
     private LinearLayout mLIMycollectionBottomDialog;
     private TextView mBtnEditor;
-    private int mEditMode = MYLIVE_MODE_CHECK;
+    public  int mEditMode = MYLIVE_MODE_CHECK;
     private boolean isSelectAll = false;
     private boolean editorStatus = false;
     private int index = 0;
@@ -233,7 +233,7 @@ public class MessageFragment extends BaseFragment implements MessageFragmentAdap
     }
 
 
-    private void updataEditMode() {
+    public void updataEditMode() {
         //这里是判断是编辑模式还是取消模式：默认是编辑模式,点击了所以是取消模式，否则是编辑模式：1代表的是编辑模式，0代表的是取消模式。
         mEditMode = mEditMode == MYLIVE_MODE_CHECK ? MYLIVE_MODE_EDIT : MYLIVE_MODE_CHECK;
         if (mEditMode == MYLIVE_MODE_EDIT) {
@@ -258,7 +258,7 @@ public class MessageFragment extends BaseFragment implements MessageFragmentAdap
     }
 
     //这里是字体为编辑状态所以一起都消失：哪个原点和下面的布局
-    private void clearAll() {
+    public void clearAll() {
         mTvSelectNum.setText(String.valueOf(0));
         isSelectAll = false;
         mSelectAll.setText("全选");
