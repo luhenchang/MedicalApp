@@ -31,13 +31,13 @@ public class ActionFragment extends BaseFragment implements ActionFragmentAdapte
     private static final int MYLIVE_MODE_CHECK = 0;
     private static final int MYLIVE_MODE_EDIT = 1;
     private RecyclerView mRecyclerView;
-    ActionFragmentAdapter adapter;
+    public ActionFragmentAdapter adapter;
     private List<MyLiveList> mList;
     private TwinklingRefreshLayout swipterfreshlayout;
     private Button mBtnDelete;
     private TextView mSelectAll;
     private TextView mTvSelectNum;
-    private LinearLayout mLIMycollectionBottomDialog;
+    public LinearLayout mLIMycollectionBottomDialog;
     private TextView mBtnEditor;
     public int mEditMode = MYLIVE_MODE_CHECK;
     private boolean isSelectAll = false;
@@ -45,6 +45,7 @@ public class ActionFragment extends BaseFragment implements ActionFragmentAdapte
     private int index = 0;
 
     UpdateTextResult updateTextresutl;
+    public AlertDialog builder;
 
     @Override
     public View initView() {
@@ -182,7 +183,7 @@ public class ActionFragment extends BaseFragment implements ActionFragmentAdapte
             mBtnDelete.setEnabled(false);
             return;
         }
-        final AlertDialog builder = new AlertDialog.Builder(mContext)
+         builder = new AlertDialog.Builder(mContext)
                 .create();
         builder.show();
         if (builder.getWindow() == null) return;

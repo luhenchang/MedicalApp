@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ScrollView
+    <com.example.ls.shoppingmall.utils.layoututils.OverScrollView
         android:id="@+id/ac_body_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -130,7 +130,7 @@
 
             </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+    </com.example.ls.shoppingmall.utils.layoututils.OverScrollView>
 
     <ListView
         android:scrollbars="none"

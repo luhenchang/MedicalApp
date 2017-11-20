@@ -36,7 +36,7 @@ public class MessageFragment extends BaseFragment implements MessageFragmentAdap
     private Button mBtnDelete;
     private TextView mSelectAll;
     private TextView mTvSelectNum;
-    private LinearLayout mLIMycollectionBottomDialog;
+    public LinearLayout mLIMycollectionBottomDialog;
     private TextView mBtnEditor;
     public  int mEditMode = MYLIVE_MODE_CHECK;
     private boolean isSelectAll = false;

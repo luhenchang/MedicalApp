@@ -25,6 +25,7 @@ import com.example.ls.shoppingmall.home.adapter.BodySearchListAdapter;
 import com.example.ls.shoppingmall.home.bean.SelectAdapterBean;
 import com.example.ls.shoppingmall.home.home_db.HistoryDb;
 import com.example.ls.shoppingmall.utils.layoututils.MyFlowLayout;
+import com.example.ls.shoppingmall.utils.layoututils.OverScrollView;
 
 import org.xutils.DbManager;
 import org.xutils.db.sqlite.WhereBuilder;
@@ -41,7 +42,7 @@ public class BodySelectActivity extends AppCompatActivity implements View.OnClic
     private String[] mHoritorData;
     private TextView mTvSearch,mSearch_db_delect;
     private ListView mAt_bady_lv;
-    private ScrollView ac_body_scroll;
+    private OverScrollView ac_body_scroll;
     private List<String> mSearchData;
     private BodySearchListAdapter searAdapte;
     private ImageView mSearch_dele_iv;
@@ -221,7 +222,7 @@ public class BodySelectActivity extends AppCompatActivity implements View.OnClic
         mAt_bady_lv.setOnItemClickListener(this);
         mSearch_dele_iv = (ImageView) findViewById(R.id.search_dele_iv);
         mSearch_dele_iv.setOnClickListener(this);
-        ac_body_scroll = (ScrollView) findViewById(R.id.ac_body_scroll);
+        ac_body_scroll = (OverScrollView) findViewById(R.id.ac_body_scroll);
         mSearch_db_delect= (TextView) findViewById(R.id.search_db_delect);
         mSearch_db_delect.setOnClickListener(this);
         searchView.addTextChangedListener(new TextWatcher() {

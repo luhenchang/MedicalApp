@@ -75,9 +75,16 @@
                 android:background="@mipmap/delete" />
         </RelativeLayout>
     </LinearLayout>
-    <ListView
-        android:scrollbars="none"
-        android:id="@+id/symptom_lv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/ac_searchtoserver_swp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ListView
+            android:divider="@null"
+            android:id="@+id/symptom_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
 </LinearLayout>

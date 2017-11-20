@@ -65,13 +65,18 @@ public class MessageActivity extends AppCompatActivity implements UpdateTextResu
         mTa.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+                //这里来控制两个碎片里面最下面弹窗的消失
                 index_pager = tab.getPosition();
-                actionFragment.mEditMode=0;
-                messageFragment.mEditMode=0;
+                actionFragment.mEditMode = 0;
+                messageFragment.mEditMode = 0;
                 actionFragment.updataEditMode();
                 messageFragment.updataEditMode();
-                messageFragment.mEditMode=0;
+                messageFragment.mEditMode = 0;
                 messageFragment.adapter.setEditMode(0);
+                actionFragment.mEditMode = 0;
+                actionFragment.adapter.setEditMode(0);
+                actionFragment.mLIMycollectionBottomDialog.setVisibility(View.GONE);
+                messageFragment.mLIMycollectionBottomDialog.setVisibility(View.GONE);
                 mViewPager.setCurrentItem(tab.getPosition(), true);
                 if (tv_edetor.getText().equals("取消")) {
                     tv_edetor.setText("编辑");
