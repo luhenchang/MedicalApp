@@ -5,5 +5,13 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
     <color name="color_b7b8bd">#b7b8bd</color>
+    <color name="transparent_black2">#20000000</color>
+    <color name="transparent_white2">#80000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="selector_choose_button_normal">#4cd237</color>
+    <color name="selector_choose_button_pressed">#9961B754</color>
+   <!--拍照颜色-->
+    <color name="txt_green">#62b651</color>
+    <color name="takephoto_line">#bab7b7</color>
 
 </resources>

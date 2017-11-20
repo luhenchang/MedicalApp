@@ -3,4 +3,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- 修改头像 -->
+    <string name="personal_update_photo_title">选择头像</string>
+    <string name="personal_update_photo_photograph">拍照</string>
+    <string name="personal_update_photo_gallery">选择本地图片</string>
+
+
 </resources>
